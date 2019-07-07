@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  color: white;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+h2 {
+  color: orange;
+}
+
+.ball {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(cyan), color-stop(magenta), color-stop(yellow), to(gray));
+  background-image: linear-gradient(cyan, magenta, yellow, gray);
+  left: 21%;
+  -webkit-animation: bounce 2s infinite cubic-bezier(0.78, -0.05, 0.89, 0.46);
+          animation: bounce 2s infinite cubic-bezier(0.78, -0.05, 0.89, 0.46);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 40%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 40%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
